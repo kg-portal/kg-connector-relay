@@ -411,6 +411,7 @@ app.all("/status", requireAction, forwardToTarget);
 app.all("/keepa_product", requireAction, forwardToTarget);
 app.all("/keepa_search", requireAction, forwardToTarget);
 app.all("/spapi_catalog_search", requireAction, forwardToTarget);
+app.all("/spapi_item_offers", requireAction, forwardToTarget);
 app.all("/browser_open", requireAction, forwardToTarget);
 app.all("/browser_type_text", requireAction, forwardToTarget);
 app.all("/browser_press_enter", requireAction, forwardToTarget);
