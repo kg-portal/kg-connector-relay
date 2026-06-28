@@ -469,6 +469,7 @@ app.all("/browser_scrape_pages", requireAction, forwardToTarget);
 app.all("/file_create", requireAction, forwardToTarget);
 app.all("/file_read", requireAction, forwardToTarget);
 app.all("/file_list", requireAction, forwardToTarget);
+app.all("/db_recent", requireAction, forwardToTarget);
 
 app.listen(PORT, () => {
   console.log("KG Connector Relay running on " + PORT);
