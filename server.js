@@ -534,6 +534,8 @@ app.all("/db_recent", requireAction, forwardToTarget);
 app.all("/wholesale_recent", requireAction, forwardToTarget);
 app.all("/bulk_profit_check", requireAction, forwardToTarget);
 app.all("/bulk_asin_offer_check", requireAction, forwardToTarget);
+app.all("/analysis_recent", requireAction, forwardToTarget);
+app.all("/analysis_export_csv", requireAction, forwardToTarget);
 
 app.listen(PORT, () => {
   console.log("KG Connector Relay running on " + PORT);
