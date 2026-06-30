@@ -538,6 +538,7 @@ app.all("/analysis_recent", requireAction, forwardToTarget);
 app.all("/analysis_export_csv", requireAction, forwardToTarget);
 app.all("/keepa_multi_market", requireAction, forwardToTarget);
 app.all("/keepa_save_analysis", requireAction, forwardToTarget);
+app.all("/keepa_save_analysis", requireAction, forwardToTarget);
 
 app.listen(PORT, () => {
   console.log("KG Connector Relay running on " + PORT);
