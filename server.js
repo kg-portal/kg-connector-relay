@@ -252,6 +252,8 @@ const OPENAPI_YAML = [
 "        page: { type: integer }",
 "        perPage: { type: integer }",
 "        include_raw: { type: boolean }",
+"        include_products: { type: boolean }",
+"        product_limit: { type: integer }",
 "    FileCreateRequest:",
 "      type: object",
 "      required: [relative_path]",
