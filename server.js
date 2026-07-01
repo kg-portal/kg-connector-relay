@@ -472,6 +472,36 @@ const OPENAPI_YAML = [
 "          content:",
 "            application/json:",
 "              schema: { $ref: '#/components/schemas/GenericObject' }",
+"  /keepa_categories_sync:",
+"    post:",
+"      operationId: keepa_categories_sync",
+"      summary: Sync Keepa category tree into local cache",
+"      requestBody:",
+"        required: false",
+"        content:",
+"          application/json:",
+"            schema: { $ref: '#/components/schemas/GenericObject' }",
+"      responses:",
+"        '200':",
+"          description: OK",
+"          content:",
+"            application/json:",
+"              schema: { $ref: '#/components/schemas/GenericObject' }",
+"  /keepa_categories_cache_search:",
+"    post:",
+"      operationId: keepa_categories_cache_search",
+"      summary: Search cached Keepa categories by name",
+"      requestBody:",
+"        required: false",
+"        content:",
+"          application/json:",
+"            schema: { $ref: '#/components/schemas/GenericObject' }",
+"      responses:",
+"        '200':",
+"          description: OK",
+"          content:",
+"            application/json:",
+"              schema: { $ref: '#/components/schemas/GenericObject' }",
 "  /keepa_search:",
 "    post:",
 "      operationId: keepa_search",
@@ -804,6 +834,8 @@ app.all("/db_schema", requireAction, forwardToTarget);
 app.all("/product_cache_recent", requireAction, forwardToTarget);
 app.all("/search_history_recent", requireAction, forwardToTarget);
 app.all("/keepa_categories", requireAction, forwardToTarget);
+app.all("/keepa_categories_sync", requireAction, forwardToTarget);
+app.all("/keepa_categories_cache_search", requireAction, forwardToTarget);
 
 app.listen(PORT, () => {
   console.log("KG Connector Relay running on " + PORT);
