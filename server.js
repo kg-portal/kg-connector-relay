@@ -238,17 +238,39 @@ const OPENAPI_YAML = [
 "            title: { type: string }",
 "            rootCategory: { type: integer }",
 "            productType: { type: integer }",
+
 "            current_COUNT_NEW_gte: { type: integer }",
 "            current_COUNT_NEW_lte: { type: integer }",
 "            current_AMAZON_gte: { type: integer }",
 "            current_AMAZON_lte: { type: integer }",
-"            salesRankDrops30_gte: { type: integer }",
-"            salesRankDrops90_gte: { type: integer }",
 "            current_BUY_BOX_SHIPPING_gte: { type: integer }",
 "            current_BUY_BOX_SHIPPING_lte: { type: integer }",
-"            isHazMat: { type: boolean }",
+
+"            salesRankDrops30_gte: { type: integer }",
+"            salesRankDrops90_gte: { type: integer }",
+"            monthlySold_gte: { type: integer }",
+"            monthlySold_lte: { type: integer }",
+
+"            current_RATING_gte: { type: integer }",
+"            current_RATING_lte: { type: integer }",
+"            current_COUNT_REVIEWS_gte: { type: integer }",
+"            current_COUNT_REVIEWS_lte: { type: integer }",
+
+"            trackingSince_gte: { type: integer }",
+"            trackingSince_lte: { type: integer }",
+
+"            packageWeight_gte: { type: integer }",
+"            packageWeight_lte: { type: integer }",
 "            packageQuantity_gte: { type: integer }",
 "            packageQuantity_lte: { type: integer }",
+
+"            buyBoxSellerCount_gte: { type: integer }",
+"            buyBoxSellerCount_lte: { type: integer }",
+"            totalOfferCount_gte: { type: integer }",
+"            totalOfferCount_lte: { type: integer }",
+
+"            isHazMat: { type: boolean }",
+"            isAdultProduct: { type: boolean }",
 "        page: { type: integer }",
 "        perPage: { type: integer }",
 "        include_raw: { type: boolean }",
