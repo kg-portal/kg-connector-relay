@@ -502,6 +502,7 @@ const OPENAPI_YAML = [
 "          content:",
 "            application/json:",
 "              schema: { $ref: '#/components/schemas/GenericObject' }",
+
 "  /keepa_search:",
 "    post:",
 "      operationId: keepa_search",
