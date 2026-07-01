@@ -457,6 +457,21 @@ const OPENAPI_YAML = [
 "          content:",
 "            application/json:",
 "              schema: { $ref: '#/components/schemas/GenericObject' }",
+"  /keepa_categories:",
+"    post:",
+"      operationId: keepa_categories",
+"      summary: Read Keepa category tree or search category names",
+"      requestBody:",
+"        required: false",
+"        content:",
+"          application/json:",
+"            schema: { $ref: '#/components/schemas/GenericObject' }",
+"      responses:",
+"        '200':",
+"          description: OK",
+"          content:",
+"            application/json:",
+"              schema: { $ref: '#/components/schemas/GenericObject' }",
 "  /keepa_search:",
 "    post:",
 "      operationId: keepa_search",
@@ -788,6 +803,7 @@ app.all("/keepa_save_analysis", requireAction, forwardToTarget);
 app.all("/db_schema", requireAction, forwardToTarget);
 app.all("/product_cache_recent", requireAction, forwardToTarget);
 app.all("/search_history_recent", requireAction, forwardToTarget);
+app.all("/keepa_categories", requireAction, forwardToTarget);
 
 app.listen(PORT, () => {
   console.log("KG Connector Relay running on " + PORT);
