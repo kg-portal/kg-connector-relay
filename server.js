@@ -749,7 +749,7 @@ const OPENAPI_YAML = [
 "          description: OK",
 "          content:",
 "            application/json:",
-"            schema: { $ref: '#/components/schemas/ProductCandidatesRequest' }",             
+"              schema: { $ref: '#/components/schemas/GenericObject' }",             
 "  /wholesale_recent:",
 "    post:",
 "      operationId: wholesale_recent",
