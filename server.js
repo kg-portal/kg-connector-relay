@@ -729,6 +729,21 @@ const OPENAPI_YAML = [
 "          content:",
 "            application/json:",
 "              schema: { $ref: '#/components/schemas/GenericObject' }",
+"  /product_candidates:",
+"    post:",
+"      operationId: product_candidates",
+"      summary: Scan local product_cache and return compact ranked product candidates",
+"      requestBody:",
+"        required: false",
+"        content:",
+"          application/json:",
+"            schema: { $ref: '#/components/schemas/GenericObject' }",
+"      responses:",
+"        '200':",
+"          description: OK",
+"          content:",
+"            application/json:",
+"              schema: { $ref: '#/components/schemas/GenericObject' }",
 "  /wholesale_recent:",
 "    post:",
 "      operationId: wholesale_recent",
@@ -868,6 +883,7 @@ app.all("/file_read", requireAction, forwardToTarget);
 app.all("/file_list", requireAction, forwardToTarget);
 app.all("/db_recent", requireAction, forwardToTarget);
 app.all("/wholesale_recent", requireAction, forwardToTarget);
+app.all("/product_candidates", requireAction, forwardToTarget);
 app.all("/bulk_profit_check", requireAction, forwardToTarget);
 app.all("/bulk_asin_offer_check", requireAction, forwardToTarget);
 app.all("/analysis_recent", requireAction, forwardToTarget);
