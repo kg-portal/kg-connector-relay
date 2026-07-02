@@ -172,7 +172,6 @@ const OPENAPI_YAML = [
 "      additionalProperties: true",
 "      properties:",
 "        table: { type: string }",
-"        limit: { type: integer }",
 "        source: { type: string }",
 "        country: { type: string }",
 "        marketplace: { type: string }",
